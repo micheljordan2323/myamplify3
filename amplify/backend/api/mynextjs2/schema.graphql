@@ -1,0 +1,9 @@
+type BloodPressure @model @auth(rules: [{ allow: owner }]) {
+  id: ID!
+  measurementDateTime: AWSDateTime!
+  systolicPressure: Int!
+  diastolicPressure: Int!
+  owner: String @auth(rules: [{ allow: owner, operations: [read, delete] }])
+  createdAt: AWSDateTime!
+  updatedAt: AWSDateTime!
+} 

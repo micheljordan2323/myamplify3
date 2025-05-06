@@ -5,7 +5,7 @@
 - nodejs
 - typescript
 - nextjs
-- amplify
+- amplify gen2
 
 ## 機能
 - 血圧の測定日時と最高血圧、最低血圧の入力
